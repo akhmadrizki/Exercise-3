@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class='header'>
+		<div class="col-12">
+			<form>
+			  <div class="form-row">
+			  	<div class="col">
+			  		<select class="form-control" id="option">
+				      	<option value="name">Name</option>
+			            <option value="rotation">Rotation Period</option>
+			            <option value="orbital">Orbital Period</option>
+			            <option value="diameter">Diameter</option>
+			            <option value="climate">Climate</option>
+			            <option value="gravity">Gravity</option>
+			            <option value="terrain">Terrain</option>
+			            <option value="surface">Surface Water</option>
+			            <option value="population">Population</option>
+			            <option value="created">Created</option>
+			            <option value="edited">Edited</option>
+			            <option value="url">Url</option>
+				    </select>
+			  	</div>
+			    <div class="col">
+			      <input type="text" id="search" class="form-control" placeholder="Search...">
+			    </div>
+			    <div class="col">
+			  		<select class="form-control" id="sort">
+				      	<option value="asc">ASC</option>
+	            		<option value="desc">DESC</option>
+				    </select>
+			  	</div>
+			  </div>
+			</form>
+		</div>
+		<div class="col-6 mt-3" style="margin: 0 auto;">
+			<button type="button" class="btn btn-secondary btn-block" onClick="search()">Cari</button>
+		</div>
+    </div>
+	<div style="overflow-x:auto;">
+		<table class="table" id="table">
+		  <thead class="thead-dark">
+		    <tr>
+		      <th scope="col">Name</th>
+		      <th scope="col">Rotation Period</th>
+		      <th scope="col">Orbital Period</th>
+		      <th scope="col">Diameter</th>
+		      <th scope="col">Climate</th>
+		      <th scope="col">Gravity</th>
+		      <th scope="col">Terrain</th>
+		      <th scope="col">Surface Water</th>
+		      <th scope="col">Population</th>
+		      <th scope="col">Created</th>
+		      <th scope="col">Edited</th>
+		      <th scope="col">Url</th>
+		    </tr>
+		  </thead>
+
+		  <tbody id ='body'>
+		        
+		  </tbody>
+
+		</table>
+	</div>
+	<div class="footer text-center">&copy; 2019 | Akhmad Rizki Prayoga</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

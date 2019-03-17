@@ -1,0 +1,13 @@
+button{
+	border: 1px solid black;
+	background-color: yellow;
+}
+.header{
+	background: #0096b5;
+	padding: 10px;
+}
+.footer{
+	padding: 4px 0;
+	background: #0096b5;
+	color: #fff;
+}
